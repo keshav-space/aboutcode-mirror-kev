@@ -19,5 +19,7 @@ dependencyCheck {
 }
 ```
 
+# License
 
+You can use it without any charge but also without any warranty. It's yours in all the aspects, risk and benefits.
 
