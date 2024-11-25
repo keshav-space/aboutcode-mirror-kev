@@ -20,9 +20,9 @@ jobs:
 
       - name: Commit and push if it changed
         run: |-
-          git config user.name "Automated daily update"
-          git config user.email "actions@users.noreply.github.com"
+          git config user.name "AboutCode Automation"
+          git config user.email "automation@aboutcode.org"
           git add -A
           timestamp=$(date -u)
-          git commit -m "Update json: ${timestamp}" || exit 0
+          git commit -m "$(echo -e "Update KEV: $timestamp\n\nSigned-off-by: AboutCode Automation <automation@aboutcode.org>")" || exit 0
           git push
